@@ -1,79 +1,130 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# Scalable React Native Boilerplate by Malik CHOHRA
+**Sponsored by [CasaInnov](https://casainnov.com)**
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Introduction
+Welcome to the Scalable React Native Boilerplate, a structured starting point for building React Native applications that are maintainable, scalable, and efficient. This boilerplate follows the best practices for organizing your codebase, setting up state management, handling API interactions, theming, and more. We use the latest React Native version and keep all libraries up to date, ensuring compatibility with the most recent features and improvements.
 
-## Step 1: Start the Metro Server
+## Features
+- **Modern Project Structure**: Organized folder layout to easily manage components, hooks, API, assets, and more.
+- **Atomic Design Principles**: Component architecture based on Atomic Design for better reusability and scalability.
+- **State Management**: Integrated Redux Toolkit with preconfigured actions, reducers, and selectors for managing app state.
+- **API Layer**: Dedicated folder structure for handling API calls, including mock data for development and testing.
+- **Theming and Styling**: Centralized theme management with a customizable design system for colors, fonts, and global styles.
+- **Navigation Setup**: Modular navigation system using React Navigation for managing stacks, tabs, and nested routes.
+- **Testing Setup**: Unit, integration, and end-to-end (E2E) testing configurations using Jest and Detox.
+- **CI/CD with Fastlane**: Preconfigured Fastlane setup for automating builds, testing, and deployment to the App Store and Google Play.
+- **Localization**: Internationalization (i18n) support with ready-to-use language configuration.
+- **Latest Libraries**: All dependencies are up to date, including the latest stable versions of React Native and popular libraries.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
-
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+## Project Structure with Comments
+```
+├── e2e                     # Detox configuration for different environments
+├── Common                  # General functions and utilities for rendering screens
+├── Fastlane                # CI/CD configuration using Fastlane for automated builds and deployment
+├── API                     # API classes and mocked data for testing in development
+├── Types                   # TypeScript type definitions for API and app data
+├── Assets                  # App assets, including images, icons, and fonts
+│   ├── Images              # Image assets used in the app
+│   ├── Icons               # Icon assets used in the app
+│   ├── Fonts               # Font files used in the app
+├── Components              # Reusable components organized with Atomic Design principles
+├── Containers              # Context providers and app-wide containers
+├── Hooks                   # Custom hooks for reusable logic
+├── I18n                    # Internationalization configuration
+├── Navigation              # Navigation setup with React Navigation
+├── Screens                 # App screens organized by features, with subfolders for components, hooks, and utils
+├── Theme                   # Theming configuration with color and typography settings
+├── Utils                   # Utility functions and helpers used across the app
+├── Redux                   # Redux Toolkit setup for state management, including actions, reducers, and selectors
+└── __tests__               # Unit and integration tests for components and screens
 ```
 
-## Step 2: Start your Application
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Example App
+![Example App](screenshot/scalable-react-native.gif)
 
-### For Android
 
+## Getting Started
+
+### Prerequisites
+Make sure you have the following installed:
+- Node.js (>= 14.x)
+- Yarn or npm 
+- Xcode (for iOS development)
+- Android Studio (for Android development)
+
+### Installation
+Clone the repository:
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
+git clone git@github.com:chohra-med/scalableReactNativeBoilerplate.git
+```
+Install the dependencies:
+```bash
+cd scalableReactNativeBoilerplate
+yarn 
+```
+Start the development server:
+```bash
+yarn start
+```
+Run the app on iOS:
+```bash
+yarn ios
+```
+Run the app on Android:
+```bash
 yarn android
 ```
 
-### For iOS
+## Testing
 
+### Unit Tests
+Run unit tests with Jest:
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+yarn test
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### E2E Tests
+Run end-to-end tests with Detox:
+```bash
+yarn detox build -c ios
+yarn detox test -c ios
+```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## CI/CD with Fastlane
+The boilerplate includes a basic Fastlane setup for automating builds, testing, and deployment.
 
-## Step 3: Modifying your App
+Build the app for Android and iOS:
+```bash
+cd fastlane
+fastlane android beta
+fastlane ios beta
+```
 
-Now that you have successfully run the app, let's modify it.
+## Key Libraries and Versions
+- **React Native**: 0.75.3
+- **React Navigation**: v6 < 6.4.1>
+- **Redux Toolkit**: For state management: 2.2.7
+- **React Native Paper**: For theming and UI components: 5.12.5
+- **Jest & Detox**: For testing < 20.26>
+- **Fastlane**: For CI/CD <>
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`feature/new-feature`).
+3. Commit your changes.
+4. Push to the branch.
+5. Open a pull request.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## License
+This project is licensed under the MIT License.
 
-## Congratulations! :tada:
+## Acknowledgments
+Thanks to the community for maintaining awesome libraries that make React Native development easier.
 
-You've successfully run and modified your React Native App. :partying_face:
+## Developed by Malik CHOHRA
+For collaboration, find me on [LinkedIn](https://www.linkedin.com/in/malik-chohra/).
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Visit [CasaInnov](https://casainnov.com) if you need any collaboration.
