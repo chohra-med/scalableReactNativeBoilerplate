@@ -1,3 +1,7 @@
+// to learn more about app theming
+// check this article
+// https://medium.com/@malikchohra/build-for-scale-use-a-design-system-in-your-react-native-app-5790982cae7e
+
 const primary = '#463FB0' // rgb(70, 63, 176)
 const purples = {
   purple900: '#4A5784', // rgb(74, 87, 132)

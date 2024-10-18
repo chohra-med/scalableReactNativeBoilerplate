@@ -1,3 +1,5 @@
+// learn more about using React Native Fast Image
+// https://medium.com/@malikchohra/build-for-scale-how-to-use-react-native-fast-image-393a647d60d5
 import React, {useState} from 'react';
 import {ImageProps, ActivityIndicator, View, StyleSheet} from 'react-native';
 import FastImage, {Source} from 'react-native-fast-image';

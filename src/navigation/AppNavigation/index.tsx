@@ -1,3 +1,5 @@
+// learn more about the approach here
+// https://medium.com/@malikchohra/build-for-scale-best-approach-on-how-to-use-react-navigation-in-react-native-d3eb7362c80e
 import * as React from 'react';
 import AppScreens, {AppScreensParamList} from './AppScreens';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -44,6 +46,8 @@ const AppNavigation = () => {
           title: t('settingScreen.settingTitle'),
           tabBarLabel: t('settingScreen.settingTitle'),
           tabBarActiveTintColor: colors.primary,
+          // learn more about the usage of SVG icons
+          // https://medium.com/@malikchohra/build-for-scale-how-to-use-svgs-in-react-native-5f49ad4a7715
           tabBarIcon: ({color}): JSX.Element => {
             return (
               <SettingsIcon testID="navigateToSettingsScreen" fill={color} />

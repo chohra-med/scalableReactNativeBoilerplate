@@ -1,3 +1,6 @@
+// learn more about testing here
+// https://medium.com/@malikchohra/guide-to-testing-in-react-native-end-to-end-test-using-detox-f29fd1344180
+
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
 import {ThemeProvider} from 'react-native-paper';

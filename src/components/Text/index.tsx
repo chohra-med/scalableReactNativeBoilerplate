@@ -1,3 +1,6 @@
+// learn more about the usage of custom Fonts
+// https://medium.com/@malikchohra/build-for-scale-use-custom-fonts-in-react-native-5cae05ee1a99
+
 import {useAppTheme} from '~/container/AppThemeProvider';
 import * as React from 'react';
 import {ColorValue, StyleProp, TextProps, TextStyle} from 'react-native';

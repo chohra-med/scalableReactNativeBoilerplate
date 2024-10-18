@@ -1,6 +1,5 @@
-/**
- * @format
- */
+// learn more about testing here
+// https://medium.com/@malikchohra/guide-to-testing-in-react-native-end-to-end-test-using-detox-f29fd1344180
 
 import 'react-native';
 import React from 'react';

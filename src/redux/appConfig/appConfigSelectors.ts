@@ -1,3 +1,7 @@
+// to get more knoweldge about the usage of Redux toolkit 
+// check this article
+// https://casainnov.com/how-to-use-redux-toolkit-for-your-react-and-react-native-app
+
 import { RootState } from '../rootReducer';
 import { AppLanguageType } from './appConfigModel';
 

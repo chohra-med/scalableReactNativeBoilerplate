@@ -1,3 +1,6 @@
+// learn more about the approach here
+// https://medium.com/@malikchohra/build-for-scale-best-approach-on-how-to-use-react-navigation-in-react-native-d3eb7362c80e
+
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 

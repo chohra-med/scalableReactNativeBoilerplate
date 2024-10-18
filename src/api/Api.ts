@@ -1,3 +1,5 @@
+// learn the Facade Pattern
+// https://medium.com/@malikchohra/build-to-scale-the-facade-pattern-1f5db01226a9
 import axios from 'axios';
 
 import {

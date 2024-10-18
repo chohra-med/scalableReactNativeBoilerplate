@@ -1,3 +1,5 @@
+// learn more about static typing
+// https://medium.com/@malikchohra/guide-to-static-code-analysis-for-react-and-react-native-c745dfc250bd
 {
   "compilerOptions": {
     "noUnusedLocals": true,

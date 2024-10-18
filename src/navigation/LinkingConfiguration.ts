@@ -1,3 +1,5 @@
+// learn more about the approach here
+// https://medium.com/@malikchohra/build-for-scale-best-approach-on-how-to-use-react-navigation-in-react-native-d3eb7362c80e
 import { LinkingOptions } from '@react-navigation/native';
 import AppScreens from './AppNavigation/AppScreens';
 

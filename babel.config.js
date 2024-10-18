@@ -1,3 +1,5 @@
+// learn more about absolute path configuration here
+// https://medium.com/@malikchohra/how-to-use-absolute-path-in-the-latest-react-react-native-version-fe88142a6f7e
 module.exports = {
   presets: ['module:@react-native/babel-preset'],
   plugins: [

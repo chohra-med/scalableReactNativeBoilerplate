@@ -1,3 +1,7 @@
+// to learn more about Animation
+// check this article
+// https://casainnov.com/learn-animation-in-react-native-using-reanimated-library
+
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 import {containerStyle} from '~/theme/globalStyling/cards';
