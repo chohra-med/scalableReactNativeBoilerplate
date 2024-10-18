@@ -1,0 +1,25 @@
+#Fastlane file to ship Build to Ios and Play Store
+# check my articles:
+#    1- https://medium.com/@malikchohra/ci-cd-pipeline-for-react-native-apps-use-fastlane-and-github-actions-40f9ad2036d0
+#    2- https://medium.com/@malikchohra/ci-cd-pipeline-for-react-native-apps-use-fastlane-and-github-actions-dcf101edc423
+platform :ios do 
+    desc 'Ship to Apple Store'
+     lane :beta do
+       build
+       pilot
+       commit_version_bump(message: 'Bump build', xcodeproj: './ios/scalableReactNativeStructure.xcodeproj')
+       push_to_git_remote
+     end 
+    end
+
+
+ platform :android do 
+    desc 'Ship to Playstore Beta.'
+     lane :beta do
+        build
+        supply(track: 'beta', track_promote_to: 'beta')
+        git_commit(path: ['./android/gradle.properties'], message: 'Bump versionCode')
+        push_to_git_remote
+     end
+    end
+    private_lane :testflight_build do 

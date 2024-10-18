@@ -1,0 +1,21 @@
+{
+    "common": {
+        "cancel": "cancel",
+        "no": "no",
+        "yes": "yes",
+        "welcome": "Welcome to the app",
+        "isLoading": "is Loading",
+        "textCopied": " The {{title}} has been copied"
+    },
+    "settingScreen": {
+        "settingTitle": "Setting",
+        "changeLanguage": "Change your language",
+        "frLanguage": "French",
+        "enLanguage": "English",
+        "arLanguage": "Arabic",
+        "toggleTheme": "Toggle Theme"
+    },
+    "homeScreen": {
+        "homeScreen": "Home"
+    }
+}

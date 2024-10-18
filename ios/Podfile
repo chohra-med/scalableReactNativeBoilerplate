@@ -14,7 +14,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'scalableReactNativeStructure' do
+target 'scalableReactNativeBoilerplate' do
   config = use_native_modules!
 
   use_react_native!(
@@ -23,7 +23,7 @@ target 'scalableReactNativeStructure' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'scalableReactNativeStructureTests' do
+  target 'scalableReactNativeBoilerplateTests' do
     inherit! :complete
     # Pods for testing
   end

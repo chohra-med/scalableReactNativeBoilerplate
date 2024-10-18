@@ -1,0 +1,21 @@
+{
+    "common": {
+        "cancel": "إلغاء",
+        "no": "no",
+        "yes": "yes",
+        "welcome": "مرحبًا بك في التطبيق",
+        "isLoading": "جارٍ التحميل",
+        "textCopied": " تم نسخ {{title}}"
+    },
+    "settingScreen": {
+        "settingTitle": "الإعدادات",
+        "changeLanguage": "قم بتغيير لغتك",
+        "frLanguage": "الفرنسية",
+        "enLanguage": "الإنجليزية",
+        "arLanguage": "عربي",
+        "toggleTheme": "تبديل الموضوع"
+    },
+    "homeScreen": {
+        "homeScreen": "الصفحة الرئيسية"
+    }
+}

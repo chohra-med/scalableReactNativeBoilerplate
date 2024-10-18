@@ -1,0 +1,20 @@
+{
+    "common": {
+        "cancel": "Annuler",
+        "no": "non",
+        "yes": "Oui",
+        "welcome": "Bienvenue",
+        "isLoading": "En train "
+    },
+    "settingScreen": {
+        "settingTitle": "Parametres",
+        "changeLanguage": "Changez votre Langue",
+        "frLanguage": "Francais",
+        "enLanguage": "Anglais",
+        "arLanguage": "Arabe",
+        "toggleTheme": "Changez le theme"
+    },
+    "homeScreen": {
+        "homeScreen": "Accueil"
+    }
+}

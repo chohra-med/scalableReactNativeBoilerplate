@@ -1,0 +1,10 @@
+{
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": ["./init.ts"],
+    "testRunner": "jasmine2",
+    "testTimeout": 120000,
+    "testRegex": "\\.e2e\\.ts$",
+    "reporters": ["detox/runners/jest/streamlineReporter"],
+    "verbose": true
+}
