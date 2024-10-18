@@ -1,6 +1,7 @@
 
 # Scalable React Native Boilerplate by Malik CHOHRA
-**Sponsored by [CasaInnov](https://casainnov.com)**
+
+**Sponsored by [CasaInnov](https://casainnov.com){:target="_blank"}**
 
 ## Introduction
 Welcome to the Scalable React Native Boilerplate, a structured starting point for building React Native applications that are maintainable, scalable, and efficient. This boilerplate follows the best practices for organizing your codebase, setting up state management, handling API interactions, theming, and more. We use the latest React Native version and keep all libraries up to date, ensuring compatibility with the most recent features and improvements.
@@ -42,7 +43,7 @@ Welcome to the Scalable React Native Boilerplate, a structured starting point fo
 
 
 ## Example App
-![Example App](screenshot/scalable-react-native.gif)
+![Example App](./screenshot/scalable-react-native.gif)
 
 
 ## Getting Started
