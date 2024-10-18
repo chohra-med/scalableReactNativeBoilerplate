@@ -9453,6 +9453,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-config@npm:^1.5.3":
+  version: 1.5.3
+  resolution: "react-native-config@npm:1.5.3"
+  peerDependencies:
+    react-native-windows: ">=0.61"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: 0eb74e0a10ae6e96422671482da83dea16571f4f5ad848d1f18015dccbecb9cbc066788df72a88c630abf4aed0edb7616ec27704817cff18bd6ed7d61979d671
+  languageName: node
+  linkType: hard
+
 "react-native-fast-image@npm:^8.6.3":
   version: 8.6.3
   resolution: "react-native-fast-image@npm:8.6.3"
@@ -10143,9 +10155,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scalableReactNativeStructure@workspace:.":
+"scalablereactnativeboilerplate@workspace:.":
   version: 0.0.0-use.local
-  resolution: "scalableReactNativeStructure@workspace:."
+  resolution: "scalablereactnativeboilerplate@workspace:."
   dependencies:
     "@babel/core": ^7.20.0
     "@babel/plugin-transform-private-methods": ^7.25.4
@@ -10184,6 +10196,7 @@ __metadata:
     react: 18.3.1
     react-i18next: ^15.0.2
     react-native: 0.75.3
+    react-native-config: ^1.5.3
     react-native-fast-image: ^8.6.3
     react-native-gesture-handler: ^2.19.0
     react-native-localize: ^3.2.1
