@@ -5,7 +5,7 @@
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 import {containerStyle} from '~/theme/globalStyling/cards';
-import StyledText from '../../components/Text';
+import StyledText from '../../components/atoms/Text';
 import React, {useEffect} from 'react';
 import Animated, {
   Easing,
