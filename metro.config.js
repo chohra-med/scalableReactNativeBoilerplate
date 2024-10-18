@@ -1,4 +1,7 @@
 const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
+const {
+    wrapWithReanimatedMetroConfig,
+} = require('react-native-reanimated/metro-config');
 
 /**
  * Metro configuration
@@ -18,5 +21,5 @@ const config = {
         sourceExts: [...sourceExts, "svg"]
     }
 };
-
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+const metroConfig = mergeConfig(defaultConfig, config);
+module.exports = wrapWithReanimatedMetroConfig(metroConfig);
