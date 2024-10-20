@@ -144,17 +144,23 @@ Welcome to the Scalable React Native Boilerplate, a structured starting point fo
 - **Redux Persist**: For persisting Redux state: 6.0.0
 
 ## What can be done
-This React Native application, built on version 0.75.3, showcases a robust architecture designed for seamless user experiences. Leveraging React Navigation (v6 < 6.4.1>), the app provides intuitive navigation across various screens, ensuring users can easily access features. With Redux Toolkit (2.2.7) for state management, it efficiently handles complex application states, allowing for smooth data flow and real-time updates.
+This React Native application, built on version 0.75.3, showcases a robust architecture designed for seamless user experiences. 
+- Leveraging React Navigation (v6), the app provides intuitive navigation across various screens, ensuring users can easily access features.
+ - With Redux Toolkit (v2) for state management, it efficiently handles complex application states, allowing for smooth data flow and real-time updates.
 
-The UI is enhanced by React Native Paper (5.12.5), which offers a comprehensive set of customizable components and theming options, creating a visually appealing interface. To ensure quality, the app integrates Jest and Detox (< 20.26>) for testing, enabling rigorous automated testing and quality assurance. Fastlane streamlines the CI/CD process, facilitating efficient deployment and updates.
+- The UI is enhanced by React Native Paper (v5), which offers a comprehensive set of customizable components and theming options, creating a visually appealing interface.
+ - To ensure quality, the app integrates Jest and Detox (v20) for testing, enabling rigorous automated testing and quality assurance. 
+ 
+ - Fastlane streamlines the CI/CD process, facilitating efficient deployment and updates.
 
-API interactions are managed using Axios (0.27.2), allowing for flexible and robust communication with backend services. For date and time handling, Luxon (2.3.1) provides an intuitive API, ensuring that time-related data is accurately managed.
+- API interactions are managed using Axios , allowing for flexible and robust communication with backend services. 
+- Internationalization is achieved with React i18next and React Native Localize (, enabling support for multiple languages and regional settings, enhancing accessibility for a global audience. 
+- The application efficiently manages environment variables using React Native Config, ensuring sensitive data remains secure and organized.
 
-Internationalization is achieved with React i18next (11.11.4) and React Native Localize (2.1.7), enabling support for multiple languages and regional settings, enhancing accessibility for a global audience. The application efficiently manages environment variables using React Native Config (1.4.2), ensuring sensitive data remains secure and organized.
+- For optimal media handling, React Native Fast Image  enhances image loading performance, while React Native SVG  provides scalable vector graphics support, allowing for rich visual content.
 
-For optimal media handling, React Native Fast Image (8.5.11) enhances image loading performance, while React Native SVG (12.1.1) provides scalable vector graphics support, allowing for rich visual content. React Native Vector Icons (9.1.0) simplifies icon management, providing a wide array of customizable icons.
-
-Animations are made fluid and responsive with React Native Reanimated (2.3.0), enhancing user engagement through visually appealing transitions. Additionally, React Native Size Matters (0.4.0) ensures responsive design across various device sizes, while React Native Splash Screen (3.2.0) adds a polished introduction to the app. Finally, Redux Persist (6.0.0) allows for state persistence, ensuring a smooth user experience even after app restarts.
+- Animations are made fluid and responsive with React Native Reanimated enhancing user engagement through visually appealing transitions. 
+- Additionally, React Native Size Matters ensures responsive design across various device sizes.
 
 Overall, this app combines powerful libraries and a well-structured codebase to create a feature-rich and user-friendly mobile application
 
