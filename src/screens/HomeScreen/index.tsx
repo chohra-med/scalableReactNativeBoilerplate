@@ -27,6 +27,8 @@ export const HomeScreen = (): JSX.Element => {
   const animatedStyle = useAnimatedStyle(() => {
     return {
       transform: [{scale: scaleText.value}],
+      alignItems: 'center',
+      justifyContent: 'center',
     };
   });
   return (

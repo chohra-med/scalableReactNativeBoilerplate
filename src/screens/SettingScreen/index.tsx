@@ -1,10 +1,10 @@
 import {useCallback, useState} from 'react';
 import {useTranslation} from 'react-i18next';
-import {StyleSheet} from 'react-native';
-import {List, Switch} from 'react-native-paper';
+import {List} from 'react-native-paper';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useDispatch, useSelector} from 'react-redux';
-import {useAppTheme} from '~/container/AppThemeProvider';
+import AccordionList from '~/components/molecules/AccordionList';
+import SwitchListItem from '~/components/molecules/SwitchListItem';
 import {appConfigActions} from '~/redux/appConfig/appConfig';
 import {AppLanguageType} from '~/redux/appConfig/appConfigModel';
 import appConfigSelectors from '~/redux/appConfig/appConfigSelectors';
@@ -18,7 +18,6 @@ export const SettingScreen = (): JSX.Element => {
   const isDarkMode = useSelector(appConfigSelectors.isDarkMode);
 
   const dispatch = useDispatch();
-  const {colors} = useAppTheme();
 
   const handleAccordionPress = useCallback(() => {
     setAccordionVisible(prevState => !prevState);
@@ -40,17 +39,13 @@ export const SettingScreen = (): JSX.Element => {
     <SafeAreaView
       testID="screen.settingScreen"
       style={containerStyle.container}>
-      <List.Item
-        style={[styles.listItem, {backgroundColor: colors.surface}]}
-        titleStyle={{color: colors.text}}
+      <SwitchListItem
         title={t('settingScreen.toggleTheme')}
-        right={() => (
-          <Switch value={isDarkMode} onValueChange={onTogglePress} />
-        )}
+        value={isDarkMode}
+        onValueChange={onTogglePress}
       />
 
-      <List.Accordion
-        style={[styles.listItem, {backgroundColor: colors.surface}]}
+      <AccordionList
         title={t('settingScreen.changeLanguage')}
         expanded={isAccordionVisible}
         onPress={handleAccordionPress}>
@@ -66,16 +61,9 @@ export const SettingScreen = (): JSX.Element => {
           onPress={() => onLanguagePress(AppLanguageType.ARABIC)}
           title={t('settingScreen.arLanguage')}
         />
-      </List.Accordion>
+      </AccordionList>
     </SafeAreaView>
   );
 };
 
-const styles = StyleSheet.create({
-  listItem: {
-    borderWidth: 1,
-    borderRadius: 8,
-    paddingVertical: 10,
-  },
-});
 export default SettingScreen;
