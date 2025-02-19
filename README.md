@@ -1,6 +1,8 @@
 
 # Scalable React Native Boilerplate by Malik CHOHRA
 
+# check more templates, screens and design approach of different screens here: https://reactnativetemplates.com/
+
 **Sponsored by [CasaInnov](https://casainnov.com)**
 
 ## Introduction
